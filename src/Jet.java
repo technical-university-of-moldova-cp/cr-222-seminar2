@@ -12,7 +12,7 @@ public class Jet {
                 '}';
     }
 
-    public void simulate() {
+    public void simulate(Weather weather) {
         height+=10;
 
     }
