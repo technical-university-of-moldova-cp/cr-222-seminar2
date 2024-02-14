@@ -27,6 +27,12 @@ public class Jet {
             case RAIN -> {
                 latitude += 5;
             }
+            case FOG -> {
+                latitude+=1;
+            }
+            case SNOW -> {
+                height-=7;
+            }
         }
 
     }

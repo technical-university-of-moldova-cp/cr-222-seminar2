@@ -1,4 +1,6 @@
 public enum Weather {
     SUN,
-    RAIN
+    RAIN,
+    FOG,
+    SNOW
 }
