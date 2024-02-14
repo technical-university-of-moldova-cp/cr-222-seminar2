@@ -5,5 +5,8 @@ public class Main {
 
         Jet jet = new Jet(50);
         System.out.println(jet);
+        jet.simulate();
+        System.out.println(jet);
     }
+
 }

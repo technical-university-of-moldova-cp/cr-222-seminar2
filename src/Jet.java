@@ -11,4 +11,9 @@ public class Jet {
                 "height=" + height +
                 '}';
     }
+
+    public void simulate() {
+        height+=10;
+
+    }
 }
