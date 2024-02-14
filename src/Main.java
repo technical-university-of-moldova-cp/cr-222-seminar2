@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        Jet jet = new Jet(50);
+        Jet jet = new Jet(50, 150, 100);
         System.out.println(jet);
         jet.simulate(Weather.RAIN);
         System.out.println(jet);
