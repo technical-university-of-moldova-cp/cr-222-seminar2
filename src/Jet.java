@@ -23,15 +23,19 @@ public class Jet {
             case SUN -> {
                 latitude +=10;
                 height += 2;
+                System.out.println("Mama mia is hot here");
             }
             case RAIN -> {
                 latitude += 5;
+                System.out.println("Its reining as in blade runner");
             }
             case FOG -> {
                 latitude+=1;
+                System.out.println("Silent Hill vibe");
             }
             case SNOW -> {
                 height-=7;
+                System.out.println("Back in Fargo");
             }
         }
 
