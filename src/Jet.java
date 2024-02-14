@@ -13,7 +13,14 @@ public class Jet {
     }
 
     public void simulate(Weather weather) {
-        height+=10;
+        switch (weather) {
+            case SUN -> {
+                height += 10;
+            }
+            case RAIN -> {
+                height -= 10;
+            }
+        }
 
     }
 }

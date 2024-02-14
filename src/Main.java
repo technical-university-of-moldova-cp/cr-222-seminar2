@@ -7,6 +7,9 @@ public class Main {
         System.out.println(jet);
         jet.simulate(Weather.RAIN);
         System.out.println(jet);
+        jet.simulate(Weather.SUN);
+        System.out.println(jet);
+
     }
 
 }
