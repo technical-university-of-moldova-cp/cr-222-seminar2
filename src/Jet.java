@@ -1,12 +1,8 @@
-public class Jet {
-    private int height;
-    private int longitude;
-    private int latitude;
+public class Jet extends Aircraft {
+
 
     public Jet(int height, int longitude, int latitude) {
-        this.height = height;
-        this.longitude = longitude;
-        this.latitude = latitude;
+        super(height, longitude, latitude);
     }
 
     @Override
@@ -18,6 +14,7 @@ public class Jet {
                 '}';
     }
 
+    @Override
     public void simulate(Weather weather) {
         switch (weather) {
             case SUN -> {

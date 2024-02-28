@@ -1,12 +1,7 @@
-public class Hellicopter {
-    private int height;
-    private int longitude;
-    private int latitude;
+public class Hellicopter extends Aircraft {
 
     public Hellicopter(int height, int longitude, int latitude) {
-        this.height = height;
-        this.longitude = longitude;
-        this.latitude = latitude;
+        super(height, longitude, latitude);
     }
 
     @Override
@@ -18,6 +13,7 @@ public class Hellicopter {
                 '}';
     }
 
+    @Override
     public void simulate(Weather weather) {
         switch (weather) {
             case SUN -> {
