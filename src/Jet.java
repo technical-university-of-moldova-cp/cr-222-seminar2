@@ -1,8 +1,8 @@
 public class Jet extends Aircraft {
 
 
-    public Jet(int height, int longitude, int latitude) {
-        super(height, longitude, latitude);
+    public Jet(String name, int height, int longitude, int latitude) {
+        super(height, longitude, latitude, name);
     }
 
     @Override

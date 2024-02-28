@@ -1,7 +1,7 @@
 public class Hellicopter extends Aircraft {
 
-    public Hellicopter(int height, int longitude, int latitude) {
-        super(height, longitude, latitude);
+    public Hellicopter(String name, int height, int longitude, int latitude) {
+        super(height, longitude, latitude, name);
     }
 
     @Override
