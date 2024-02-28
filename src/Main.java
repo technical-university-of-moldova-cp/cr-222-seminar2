@@ -11,6 +11,9 @@ public class Main {
         jet.simulate(Weather.SNOW);
 
         hellicopter.simulate(Weather.SUN);
+Tower tower = new Tower();
+        tower.register(jet);
+        tower.register(hellicopter);
 
     }
 
