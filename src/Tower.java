@@ -12,5 +12,8 @@ private ArrayList<Aircraft> aircrafts=new ArrayList<>();
 
 
     public void simulate() {
+        for (Aircraft aircraft : aircrafts) {
+            aircraft.simulate(Weather.RAIN);
+        }
     }
 }

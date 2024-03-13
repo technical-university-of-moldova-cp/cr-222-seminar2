@@ -3,18 +3,13 @@
 public class Main {
     public static void main(String[] args) {
 
-        Jet jet = new Jet("Stas",50, 150, 100);
-        Hellicopter hellicopter = new Hellicopter("Elionora",30,30,30);
-        jet.simulate(Weather.RAIN);
-        jet.simulate(Weather.SUN);
-        jet.simulate(Weather.FOG);
-        jet.simulate(Weather.SNOW);
+        Jet jet = new Jet("Stas", 50, 150, 100);
+        Hellicopter hellicopter = new Hellicopter("Elionora", 30, 30, 30);
 
-        hellicopter.simulate(Weather.SUN);
-Tower tower = new Tower();
+        Tower tower = new Tower();
         tower.register(jet);
         tower.register(hellicopter);
-tower.simulate ();
+        tower.simulate();
     }
 
 }
