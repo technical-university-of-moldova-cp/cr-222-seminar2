@@ -1,6 +1,9 @@
-public class Tower {
+import java.util.ArrayList;
 
+public class Tower {
+private ArrayList<Aircraft> aircrafts=new ArrayList<>();
     public void register(Aircraft aircraft) {
+        aircrafts.add(aircraft);
         System.out.println("Tower says: "+
                 aircraft.getClass().getName() +
                 "#"+aircraft.getName()+
@@ -8,4 +11,6 @@ public class Tower {
     }
 
 
+    public void simulate() {
+    }
 }

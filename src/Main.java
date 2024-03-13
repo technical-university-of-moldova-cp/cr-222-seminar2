@@ -14,7 +14,7 @@ public class Main {
 Tower tower = new Tower();
         tower.register(jet);
         tower.register(hellicopter);
-
+tower.simulate ();
     }
 
 }
