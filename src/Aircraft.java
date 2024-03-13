@@ -27,4 +27,8 @@ public abstract class Aircraft {
     public int getId() {
         return id;
     }
+
+    protected void displayMessage(String message) {
+        System.out.println(getClass().getName()+"#" + getName() + "(" + getId() + "): " + message);
+    }
 }

@@ -38,7 +38,5 @@ public class Jet extends Aircraft {
 
     }
 
-    private void displayMessage(String message) {
-        System.out.println("Jet#" + getName() + "(" + getId() + "): " + message);
-    }
+
 }
