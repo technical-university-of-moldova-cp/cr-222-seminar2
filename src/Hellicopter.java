@@ -18,7 +18,7 @@ public class Hellicopter extends Aircraft {
         switch (weather) {
             case SUN -> {
                 latitude +=5;
-                height += 7;
+                incrementHeight(7);
                 displayMessage("Mama mia is hot here");
             }
             case RAIN -> {
@@ -30,7 +30,7 @@ public class Hellicopter extends Aircraft {
                 displayMessage("Silent Hill vibe");
             }
             case SNOW -> {
-                height-=7;
+                incrementHeight(-7);
                 displayMessage("Back in Fargo");
             }
         }

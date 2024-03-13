@@ -31,4 +31,9 @@ public abstract class Aircraft {
     protected void displayMessage(String message) {
         System.out.println(getClass().getName()+"#" + getName() + "(" + getId() + "): " + message);
     }
+    protected void incrementHeight(int height1) {
+        height += height1;
+        if(height>100)
+            height=100;
+    }
 }

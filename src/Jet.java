@@ -19,7 +19,8 @@ public class Jet extends Aircraft {
         switch (weather) {
             case SUN -> {
                 latitude +=10;
-                height += 2;
+
+                incrementHeight(2);
                 displayMessage("Mama mia is hot here");
             }
             case RAIN -> {
@@ -31,12 +32,14 @@ public class Jet extends Aircraft {
                 displayMessage("Silent Hill vibe");
             }
             case SNOW -> {
-                height-=7;
+                incrementHeight(-7);
                 displayMessage("Back in Fargo");
             }
         }
 
     }
+
+
 
 
 }
