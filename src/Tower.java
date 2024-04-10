@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Tower {
+public class Tower implements Publisher{
 private ArrayList<Aircraft> aircrafts=new ArrayList<>();
     public void register(Aircraft aircraft) {
         aircrafts.add(aircraft);
@@ -15,5 +15,10 @@ private ArrayList<Aircraft> aircrafts=new ArrayList<>();
         for (Aircraft aircraft : aircrafts) {
             aircraft.simulate(Weather.SUN);
         }
+    }
+
+    @Override
+    public void publish(Aircraft aircraft, CrashEvent crashEvent) {
+
     }
 }
