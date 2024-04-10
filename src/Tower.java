@@ -8,17 +8,23 @@ private ArrayList<Aircraft> aircrafts=new ArrayList<>();
                 aircraft.getClass().getName() +
                 "#"+aircraft.getName()+
                 "("+aircraft.getId()+") registered to the weather tower");
+        aircraft.registerPublisher(this );
     }
 
 
     public void simulate() {
-        for (Aircraft aircraft : aircrafts) {
-            aircraft.simulate(Weather.SUN);
+        Weather[] weathers=new Weather[]{Weather.SNOW, Weather.SUN};
+        for (Weather weather : weathers) {
+            for (Aircraft aircraft : aircrafts) {
+                aircraft.simulate(weather);
+
+            }
         }
+
     }
 
     @Override
-    public void publish(Aircraft aircraft, CrashEvent crashEvent) {
-
+    public void publish(Aircraft aircraft) {
+    aircrafts.remove(aircraft);
     }
 }

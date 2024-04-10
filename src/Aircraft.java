@@ -1,6 +1,3 @@
-import java.util.concurrent.Flow;
-import java.util.logging.ConsoleHandler;
-
 public abstract class Aircraft {
     private static int nexId=1;
     protected int height;
@@ -40,14 +37,16 @@ public abstract class Aircraft {
         if(height>100)
             height=100;
         else if (height<0) {
-            deregister();
+            publishCrashEvent();
         }
     }
 
-    private void deregister() {
-        publisher.publish(this,new CrashEvent());
+    private void publishCrashEvent() {
+        publisher.publish(this);
     }
-
+    public void registerPublisher(Publisher publisher) {
+        this.publisher = publisher;
+    }
 
     @Override
     public String toString() {

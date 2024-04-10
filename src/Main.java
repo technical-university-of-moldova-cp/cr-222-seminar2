@@ -3,15 +3,14 @@
 public class Main {
     public static void main(String[] args) {
 
-        Jet jet = new Jet("Stas", 50, 150, 100);
+        Jet jet = new Jet("Stas", 5, 150, 100);
         Hellicopter hellicopter = new Hellicopter("Elionora", 95, 30, 30);
 
         Tower tower = new Tower();
         tower.register(jet);
         tower.register(hellicopter);
         tower.simulate();
-        System.out.println(jet);
-        System.out.println(hellicopter);
+
     }
 
 }
