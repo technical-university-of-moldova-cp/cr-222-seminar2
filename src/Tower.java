@@ -4,10 +4,7 @@ public class Tower implements Publisher{
 private ArrayList<Aircraft> aircrafts=new ArrayList<>();
     public void register(Aircraft aircraft) {
         aircrafts.add(aircraft);
-        System.out.println("Tower says: "+
-                aircraft.getClass().getName() +
-                "#"+aircraft.getName()+
-                "("+aircraft.getId()+") registered to the weather tower");
+        log("registered to the weather tower", aircraft);
         aircraft.registerPublisher(this );
     }
 
@@ -26,5 +23,13 @@ private ArrayList<Aircraft> aircrafts=new ArrayList<>();
     @Override
     public void publish(Aircraft aircraft) {
     aircrafts.remove(aircraft);
+    log("deregistered to the weather tower", aircraft);
+
+    }
+    private void log(String message, Aircraft aircraft) {
+        System.out.println("Tower says: "+
+                aircraft.getClass().getName() +
+                "#"+aircraft.getName()+
+                "("+aircraft.getId()+") "+ message);
     }
 }
