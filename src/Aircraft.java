@@ -36,4 +36,15 @@ public abstract class Aircraft {
         if(height>100)
             height=100;
     }
+
+    @Override
+    public String toString() {
+        return getClass().getName()+"{" +
+                "height=" + height +
+                ", longitude=" + longitude +
+                ", latitude=" + latitude +
+                '}';
+    }
+
+
 }

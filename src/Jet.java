@@ -5,14 +5,6 @@ public class Jet extends Aircraft {
         super(height, longitude, latitude, name);
     }
 
-    @Override
-    public String toString() {
-        return "Jet{" +
-                "height=" + height +
-                ", longitude=" + longitude +
-                ", latitude=" + latitude +
-                '}';
-    }
 
     @Override
     public void simulate(Weather weather) {
